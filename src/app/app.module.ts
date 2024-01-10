@@ -53,6 +53,7 @@ const routes: Routes = [
     AuthModule.forRoot(),
     StoreModule.forRoot(reducers, { metaReducers }),
     StoreDevtoolsModule.instrument({}),
+    EffectsModule.forRoot([]),
   ],
   bootstrap: [AppComponent],
 })
